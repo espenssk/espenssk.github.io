@@ -1,12 +1,12 @@
 /* === VARIABLES & BASE === */
 :root {
-  --color-primary: #d35400;
-  --color-primary-light: #e1701a;
+  --color-primary: #2f5fdc;
+  --color-primary-light: #4a74e6;
   --color-dark-bg: #121212;
-  --color-dark-toggle: #ffa726;
+  --color-dark-toggle: #5b8cff;
   --color-text: #222;
   --color-text-light: #eee;
-  --color-link: #d35400;
+  --color-link: #2f5fdc;
   --spacing-base: 1rem;
   --max-width: 1200px;
 }
@@ -81,6 +81,19 @@ header {
 }
 .logo-link img {
   max-height: 50px;
+}
+.logo-link {
+  font-family: "Courier New", monospace;
+  font-weight: 700;
+  font-size: 1.3rem;
+  color: #fff;
+  text-decoration: none;
+}
+.logo-link .cursor {
+  animation: blink 1s step-end infinite;
+}
+@keyframes blink {
+  50% { opacity: 0; }
 }
 nav {
   display: flex;
